@@ -10,14 +10,13 @@
         rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body class="bg-dark text-light">
     <!-- playlist header -->
     <header class="container-fluid">
-
-        <img src="/images/placeholder.jpg" alt="playlist image" class="img-fluid" />
+        <img src="/images/placeholder.jpg" alt="playlist image" id="playlist-image" />
         <!-- playlist information -->
         <!-- Action buttons -->
         <!-- Song information row -->
