@@ -2,30 +2,30 @@
 $songs = [
     [
         'cover' => '',
-        'title' => 'White Ferrari',
-        'album' => 'Blonde',
-        'artist' => 'Frank Ocean',
+        'title' => 'Land of Confusion',
+        'album' => 'Ten Thousand Fists',
+        'artist' => 'Disturbed',
+        'duration' => '3:32'
+    ],
+    [
+        'cover' => '',
+        'title' => 'Duality',
+        'album' => 'Vol.3 The Subliminal Verses',
+        'artist' => 'Slipknot',
         'duration' => '4:09'
     ],
     [
         'cover' => '',
-        'title' => 'White Ferrari',
-        'album' => 'Blonde',
-        'artist' => 'Frank Ocean',
-        'duration' => '4:09'
+        'title' => 'Latifahs Had it Up To Here',
+        'album' => 'Nature of a Sista',
+        'artist' => 'Queen Latifah',
+        'duration' => '4:27'
     ],
     [
         'cover' => '',
-        'title' => 'White Ferrari',
-        'album' => 'Blonde',
-        'artist' => 'Frank Ocean',
-        'duration' => '4:09'
-    ],
-    [
-        'cover' => '',
-        'title' => 'White Ferrari',
-        'album' => 'Blonde',
-        'artist' => 'Frank Ocean',
+        'title' => 'Brain Stew',
+        'album' => 'Insomniac',
+        'artist' => 'GreenDay',
         'duration' => '4:09'
     ],
     [
