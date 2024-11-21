@@ -30,9 +30,9 @@ $songs = [
     ],
     [
         'cover' => '',
-        'title' => 'White Ferrari',
-        'album' => 'Blonde',
-        'artist' => 'Frank Ocean',
-        'duration' => '4:09'
+        'title' => 'I Am The Fire',
+        'album' => 'Into the Wild Life',
+        'artist' => 'Halestorm',
+        'duration' => '3:37',
     ],
 ];
