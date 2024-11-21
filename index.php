@@ -35,6 +35,9 @@
         for ($i = 0; $i < count($songs); $i++) {
             $song = $songs[$i];
             $song_title = $song['title'];
+            $song_title = $song['album'];
+            $song_title = $song['artist'];
+            $song_title = $song['duration'];
             // TODO: Make more variables for the different keys in the song.
             // (hint: keys mean 'title', 'cover', 'artist', etc. check
             //        songs.php to see the other keys.)
@@ -46,11 +49,11 @@
             // Song Title
             echo "    <p class=\"col\">$song_title</p>";
             // TODO: Song Album
-            echo "    <p class=\"col\">Demon Dayz</p>";
+            echo "    <p class=\"col\">$song_album</p>";
             // TODO: Song Artist
-            echo "    <p class=\"col\">Gorillaz</p>";
+            echo "    <p class=\"col\">$song_artist</p>";
             // TODO: Song Duration
-            echo "    <p class=\"col\">2:34</p>";
+            echo "    <p class=\"col\">$song_duration</p>";
             echo "</div>";
         }
         ?>
