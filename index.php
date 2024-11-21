@@ -16,6 +16,16 @@
 <body class="bg-dark text-light">
     <!-- playlist header -->
     <header class="container-fluid">
+        <div container="flex">
+            <div>
+                <img src="" />
+                < <img src="" />
+            </div>laceholder.jpg"
+            <div>
+                <h1></h1>
+                <h1></h1>
+            </div>
+        </div>
         <img src="/images/placeholder.jpg" alt="playlist image" id="playlist-image" />
         <!-- playlist information -->
         <!-- Action buttons -->
