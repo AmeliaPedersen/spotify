@@ -16,20 +16,16 @@
 <body class="bg-dark text-light">
     <!-- playlist header -->
     <header class="container-fluid">
-        <div container="flex">
-            <div>
-                <img src="" />
-                < <img src="" />
-            </div>laceholder.jpg"
-            <div>
-                <h1></h1>
-                <h1></h1>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" src="/images/spotify.jpeg" />
+            </div>
+            <div class="col align-content-center ">
+                <p class="">Playlist</p>
+                <h1>edith piaf le ca ira </h1>
+                <p>french music </p>
             </div>
         </div>
-        <img src="/images/placeholder.jpg" alt="playlist image" id="playlist-image" />
-        <!-- playlist information -->
-        <!-- Action buttons -->
-        <!-- Song information row -->
     </header>
     <!-- Songs -->
     <main class="container-fluid" id="songs">
