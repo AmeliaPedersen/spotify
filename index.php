@@ -23,16 +23,30 @@
     </header>
     <!-- Songs -->
     <main class="container-fluid" id="songs">
-        <div class="row">
-            <p></p>
-            <img />
-            <p></p>
-            <p></p>
-            <p></p>
-
-        </div>
         <?php
         include 'songs.php';
+
+        for ($i = 0; $i < count($songs); $i++) {
+            $song = $songs[$i];
+            $song_title = $song['title'];
+            // TODO: Make more variables for the different keys in the song.
+            // (hint: keys mean 'title', 'cover', 'artist', etc. check
+            //        songs.php to see the other keys.)
+
+            echo "<div class=\"row text-center mt-3 p-2 border-bottom\">";
+            // TODO: Song Number: (hint: use plus '+')
+            echo "    <p class=\"col\">3</p>";
+            echo "    <img class=\"col-1\" src=\"/images/new disturbed image.jpeg\" />";
+            // Song Title
+            echo "    <p class=\"col\">$song_title</p>";
+            // TODO: Song Album
+            echo "    <p class=\"col\">Demon Dayz</p>";
+            // TODO: Song Artist
+            echo "    <p class=\"col\">Gorillaz</p>";
+            // TODO: Song Duration
+            echo "    <p class=\"col\">2:34</p>";
+            echo "</div>";
+        }
         ?>
     </main>
 
