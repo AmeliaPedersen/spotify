@@ -1,5 +1,31 @@
 <?php
 include 'songs.php';
+
+function duration_to_secs($time_stamp)
+{
+    $ts_components = explode(":", $time_stamp);
+    $minutes = intval($ts_components[0]);
+    $seconds = intval($ts_components[1]);
+    $seconds_in_a_minute = 60;
+
+    return ($minutes * $seconds_in_a_minute) + $seconds;
+}
+
+function timestamp_from_secs(...$seconds)
+{
+    $total_secs = array_sum($seconds);
+    $seconds_in_an_hour = 60 * 60;
+    $seconds_in_a_minute = 60;
+
+    $hours = floor($total_secs / $seconds_in_an_hour);
+    $remaining_seconds = $total_secs % $seconds_in_an_hour;
+    $minutes = floor($remaining_seconds / $seconds_in_a_minute);
+
+    $hour_unit = $hours <= 1 ? "hr" : "hrs";
+    $timestamp = "$hours $hour_unit $minutes mins";
+
+    return $timestamp;
+}
 ?>
 
 <!DOCTYPE html>
@@ -18,16 +44,31 @@ include 'songs.php';
 </head>
 
 <body class="bg-dark text-light">
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <img class="img-fluid" src="/images/spotify.jpeg" />
-            </div>
-            <div class="col align-content-center ">
-                <p class="">Playlist</p>
-                <h1>edith piaf le ca ira </h1>
-                <p>french music </p>
-            </div>
+    <header class="gradient">
+        <img class="album" src="/images/spotify.jpeg" alt="">
+        <div>
+            <p>Playlist</p>
+            <p style="font-size:4.5rem; ">
+                <b>Edith piaf le ca ira</b>
+            </p>
+            <p style="font-size:.8rem;">
+                <img class="me-2" id="profile-pic" src="images/profile.png" alt="">
+                <b> Amelia Pederson, Alex Martinez</b>
+                <span class="highlight">
+                    <?php
+                    $num_songs = count($songs);
+                    $songs_unit = $num_songs <= 1 ? "song" : "songs";
+
+                    $song_duration_secs = array_map(function ($song) {
+                        return duration_to_secs($song['duration']);
+                    }, $songs);
+
+                    $timestamp = timestamp_from_secs(...$song_duration_secs);
+
+                    echo "• 2024 • $num_songs $songs_unit • $timestamp"
+                    ?>
+                </span>
+            </p>
         </div>
     </header>
 

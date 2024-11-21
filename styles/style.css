@@ -2,8 +2,33 @@
   border: 1px solid red;
 }
 
+#profile-pic {
+  border-radius: 50%;
+  width: 1.5rem;
+}
+
+header {
+  border-radius: 1rem 1rem 0 0;
+  background-image: linear-gradient(gray, black);
+  background-repeat: no-repeat;
+}
+
 #playlist-image {
   width: 15rem;
   height: 15rem;
   object-fit: cover;
+}
+
+.gradient {
+  display: flex;
+  align-items: end;
+  white-space: nowrap;
+  color: white;
+}
+
+.album {
+  width: 15rem;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 2rem;
 }
