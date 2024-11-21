@@ -1,3 +1,7 @@
+<?php
+include 'songs.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,6 @@
 </head>
 
 <body class="bg-dark text-light">
-    <!-- playlist header -->
     <header class="container-fluid">
         <div class="row">
             <div class="col">
@@ -27,32 +30,24 @@
             </div>
         </div>
     </header>
+
     <!-- Songs -->
     <main class="container-fluid" id="songs">
         <?php
-        include 'songs.php';
-
         for ($i = 0; $i < count($songs); $i++) {
             $song = $songs[$i];
             $song_title = $song['title'];
-            $song_title = $song['album'];
-            $song_title = $song['artist'];
-            $song_title = $song['duration'];
-            // TODO: Make more variables for the different keys in the song.
-            // (hint: keys mean 'title', 'cover', 'artist', etc. check
-            //        songs.php to see the other keys.)
+            $song_album = $song['album'];
+            $song_artist = $song['artist'];
+            $song_duration = $song['duration'];
+            $song_number = $i + 1;
 
             echo "<div class=\"row text-center mt-3 p-2 border-bottom\">";
-            // TODO: Song Number: (hint: use plus '+')
-            echo "    <p class=\"col\">3</p>";
+            echo "    <p class=\"col\">$song_number</p>";
             echo "    <img class=\"col-1\" src=\"/images/new disturbed image.jpeg\" />";
-            // Song Title
             echo "    <p class=\"col\">$song_title</p>";
-            // TODO: Song Album
             echo "    <p class=\"col\">$song_album</p>";
-            // TODO: Song Artist
             echo "    <p class=\"col\">$song_artist</p>";
-            // TODO: Song Duration
             echo "    <p class=\"col\">$song_duration</p>";
             echo "</div>";
         }
@@ -61,11 +56,7 @@
 
     <!-- Media controls -->
     <footer class="footer fixed-bottom bg-dark">
-
-
         <!-- Progress bar -->
-
-
     </footer>
 
     <script
