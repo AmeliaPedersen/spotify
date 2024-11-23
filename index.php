@@ -49,7 +49,7 @@ function timestamp_from_secs(...$seconds)
         <div>
             <p>Playlist</p>
             <p style="font-size:4.5rem; ">
-                <b>Edith piaf le ca ira</b>
+                <b>Disturbed</b>
             </p>
             <p style="font-size:.8rem;">
                 <img class="me-2" id="profile-pic" src="images/profile.png" alt="">
