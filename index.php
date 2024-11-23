@@ -53,7 +53,7 @@ function timestamp_from_secs(...$seconds)
             </p>
             <p style="font-size:.8rem;">
                 <img class="me-2" id="profile-pic" src="images/profile.png" alt="">
-                <b> Amelia Pederson, Alex Martinez</b>
+                <b> Amelia Pedersen, Alex Martinez</b>
                 <span class="highlight">
                     <?php
                     $num_songs = count($songs);
@@ -78,6 +78,7 @@ function timestamp_from_secs(...$seconds)
         for ($i = 0; $i < count($songs); $i++) {
             $song = $songs[$i];
             $song_title = $song['title'];
+            $song_image = $song['cover'];
             $song_album = $song['album'];
             $song_artist = $song['artist'];
             $song_duration = $song['duration'];
@@ -85,7 +86,7 @@ function timestamp_from_secs(...$seconds)
 
             echo "<div class=\"row text-center mt-3 p-2 border-bottom\">";
             echo "    <p class=\"col\">$song_number</p>";
-            echo "    <img class=\"col-1\" src=\"/images/new disturbed image.jpeg\" />";
+            echo "    <img class=\"col-1\" src=\"$song_image\" />";
             echo "    <p class=\"col\">$song_title</p>";
             echo "    <p class=\"col\">$song_album</p>";
             echo "    <p class=\"col\">$song_artist</p>";
